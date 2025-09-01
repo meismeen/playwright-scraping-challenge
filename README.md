@@ -55,7 +55,7 @@ python handlingdl.py
 python handlingdl.py
 ```
 - Uses saved session automatically
-- Navigates through the application
+- After clicking on 'Launch Challenge', navigates through the application
 - Extracts all product data
 - Outputs to `products.json`
 
@@ -85,7 +85,7 @@ python handlingdl.py
 - **Fields**: Item #, Manufacturer, Type, SKU, Composition, Cost, Dimensions, Product
 
 ## Alternative Solution
-`backup.py` contains an alternative implementation that uses internal application functions for comparison and verification purposes.
+`backup.py` contains an alternative implementation that bypasses traditional table scraping by directly accessing the application's internal data generation function. This method intercepts and exposes the frontend's core data provider to retrieve all 4,887 products instantly, serving as a verification tool to ensure data completeness and demonstrate reverse-engineering capabilities.
 
 ## Error Handling
 - Graceful degradation when scroll methods fail
